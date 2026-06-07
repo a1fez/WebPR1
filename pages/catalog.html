@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог | МійПроєкт</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script type="module" src="../js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-flex">
+    <div class="logo">MyProject</div>
+    <div class="header-controls">
+      <button id="theme-toggle" class="btn-ui">Змінити тему 🌙</button>
+      <button id="menu-btn" class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="about.html">Про мене</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="catalog-controls card controls-flex section">
+    <div class="controls-left">
+      <div class="search-box">
+        <label for="catalog-search">Пошук</label>
+        <input type="text" id="catalog-search" placeholder="Почніть вводити назву...">
+      </div>
+      <div class="filter-box">
+        <label for="filter-category">Категорія</label>
+        <select id="filter-category">
+          <option value="all">Усі категорії</option>
+          <option value="development">Розробка</option>
+          <option value="design">Дизайн</option>
+          <option value="marketing">Маркетинг</option>
+        </select>
+      </div>
+      <div class="sort-box">
+        <label for="sort-items">Сортувати</label>
+        <select id="sort-items">
+          <option value="default">За замовчуванням</option>
+          <option value="price-asc">Ціна: від низької</option>
+          <option value="price-desc">Ціна: від високої</option>
+          <option value="rating-desc">За рейтингом</option>
+          <option value="title-asc">Назва А-Я</option>
+        </select>
+      </div>
+    </div>
+    <div class="controls-right">
+      <a href="item-form.html" class="btn-primary">+ Створити запис</a>
+    </div>
+  </section>
+
+  <section>
+    <div id="catalog-container" data-catalog></div>
+  </section>
+
+  <div class="pagination-container">
+    <button id="load-more" class="btn-secondary" hidden>Показати ще</button>
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<div id="item-modal" class="modal-overlay" hidden>
+  <div class="modal-content card">
+    <button class="close-modal" id="close-modal" type="button">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+</body>
+</html>

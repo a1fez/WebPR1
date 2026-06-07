@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обране | МійПроєкт</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="../js/main.js" type="module" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-flex">
+    <div class="logo">MyProject</div>
+    <div class="header-controls">
+      <button id="theme-toggle" class="btn-ui">Змінити тему 🌙</button>
+      <button id="menu-btn" class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Обране ❤️</h2>
+    <div id="favorites-container" data-favorites class="catalog-grid">
+      <!-- JS відрендерить тут -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Всі права захищені</p>
+  </div>
+</footer>
+
+<button id="back-to-top" title="Нагору" hidden>↑</button>
+
+</body>
+</html>

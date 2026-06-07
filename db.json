@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Розробка корпоративного сайту",
+      "category": "development",
+      "description": "Створення багатосторінкового сайту з унікальним дизайном та CMS.",
+      "image": "../assets/img/sample.jpg",
+      "price": 25000,
+      "rating": 4.9,
+      "featured": true
+    },
+    {
+      "id": "4",
+      "title": "Мобільний додаток (iOS/Android)",
+      "category": "development",
+      "description": "Розробка кросплатформених мобільних рішень на Flutter.",
+      "image": "../assets/img/sample.jpg",
+      "price": 6000022,
+      "rating": 5,
+      "featured": true
+    },
+    {
+      "id": "6",
+      "title": "Аудит безпеки сайту",
+      "category": "development",
+      "description": "Пошуasdsaк вразливостей та захист від хакерських атак.",
+      "image": "../assets/img/sample.jpg",
+      "price": 15000,
+      "rating": 4.6,
+      "featured": false
+    },
+    {
+      "id": "7",
+      "title": "SMM Ведення соцмереж",
+      "category": "marketing",
+      "description": "Створення контент-плану та просування в Instagram/Facebook.",
+      "image": "../assets/img/sample.jpg",
+      "price": 9000,
+      "rating": 4.4,
+      "featured": false
+    },
+    {
+      "id": "8",
+      "title": "Проєктування інтерфейсів (UI/UX)",
+      "category": "design",
+      "description": "Створення зручних прототипів длasasdя складних веб-сервісів.",
+      "image": "../assets/img/sample.jpg",
+      "price": 18000,
+      "rating": 4.9,
+      "featured": true
+    },
+    {
+      "id": "10",
+      "title": "Ребрендинг компанії",
+      "category": "design",
+      "description": "Повне оновлення візуального стилю та стратегії бренду.",
+      "image": "../assets/img/sample.jpg",
+      "price": 35000,
+      "rating": 4.8,
+      "featured": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

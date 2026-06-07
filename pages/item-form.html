@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Створення / Редагування запису | МійПроєкт</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script type="module" src="../js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-flex">
+    <div class="logo">MyProject</div>
+    <div class="header-controls">
+      <button id="theme-toggle" class="btn-ui">Змінити тему 🌙</button>
+      <button id="menu-btn" class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="catalog.html">← Назад в каталог</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <form id="item-form" class="card form-card" novalidate>
+    <h2>Новий запис</h2>
+
+    <div class="form-group">
+      <label for="title">Назва</label>
+      <input type="text" id="title" name="title" placeholder="Введіть назву" required>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Категорія</label>
+      <select id="category" name="category" required>
+        <option value="">Оберіть категорію</option>
+        <option value="development">Розробка</option>
+        <option value="design">Дизайн</option>
+        <option value="marketing">Маркетинг</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Ціна (грн)</label>
+      <input type="number" id="price" name="price" placeholder="Наприклад: 2500" min="1" required>
+    </div>
+
+    <div class="form-group">
+      <label for="image">URL зображення</label>
+      <input type="text" id="image" name="image" placeholder="https://...">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Опис</label>
+      <textarea id="description" name="description" placeholder="Опишіть послугу..." required></textarea>
+    </div>
+
+    <button type="submit" id="submit-btn" class="btn-primary">Зберегти</button>
+  </form>
+
+  <div id="form-message"></div>
+</main>
+
+</body>
+</html>

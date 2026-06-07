@@ -1,0 +1,119 @@
+/* --- АДАПТИВНІ СТИЛІ (Завдання 5.7) --- */
+
+/* Планшети та смартфони (менше 768px) */
+@media (max-width: 768px) {
+    
+  /* 1. Header та Мобільне меню */
+  .menu-toggle {
+      display: flex; /* Показуємо кнопку-бургер */
+      z-index: 1001;
+  }
+
+  #nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Меню заховане праворуч за межами екрана */
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: var(--color-primary);
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+      padding: 80px 20px 20px;
+      transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1000;
+  }
+
+  /* ЗАВДАННЯ 4: Стан, коли JS відкриває меню */
+  #nav-menu.is-open {
+      right: 0; /* Меню виїжджає на екран */
+  }
+
+  .nav-list {
+      flex-direction: column; /* Пункти меню один під одним */
+      align-items: flex-start;
+      gap: 25px;
+  }
+
+  .nav-list a {
+      font-size: 1.2rem;
+      width: 100%;
+      display: block;
+  }
+
+  /* 2. Контент та відступи */
+  .container {
+      width: calc(100% - 30px); /* Зменшуємо бокові поля на мобільних */
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+
+  /* 3. Фільтри (Завдання 6) */
+  .filter-navigation {
+      flex-wrap: wrap; /* Кнопки фільтрів переносяться на новий рядок */
+      justify-content: center;
+  }
+
+  .filter-btn {
+      flex: 1 1 auto;
+      text-align: center;
+  }
+
+  /* 4. Медіа та сітки */
+  .filter-grid, .media-grid {
+      grid-template-columns: 1fr; /* Картки стають в одну колонку */
+  }
+
+  .card {
+      padding: 15px; /* Менші внутрішні відступи */
+  }
+
+  /* 5. Таблиці (Запобігання виходу за межі екрана) */
+  .table-wrapper {
+      overflow-x: auto; /* Додаємо горизонтальну прокрутку, якщо таблиця велика */
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .styled-table {
+      min-width: 450px; /* Мінімальна ширина, щоб дані не злипалися */
+  }
+}
+
+/* Маленькі смартфони (менше 480px) */
+@media (max-width: 480px) {
+  .header-controls {
+      gap: 10px;
+  }
+
+  .btn-ui {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+  }
+
+  .contact-card {
+      padding: 20px 15px;
+  }
+
+  #back-to-top {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 20px;
+  }
+}
+
+/* Анімації для JavaScript ефектів */
+.animate-in {
+  animation: slideUp 0.4s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

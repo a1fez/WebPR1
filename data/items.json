@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "title": "Розробка корпоративного сайту",
+      "category": "development",
+      "description": "Створення багатосторінкового сайту з унікальним дизайном та CMS.",
+      "image": "../assets/img/web-dev.jpg",
+      "price": 25000,
+      "rating": 4.9,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Дизайн логотипу",
+      "category": "design",
+      "description": "Розробка концепції бренду та 3 варіанти логотипу на вибір.",
+      "image": "../assets/img/logo-design.jpg",
+      "price": 5000,
+      "rating": 4.7,
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "SEO Просування",
+      "category": "marketing",
+      "description": "Виведення сайту в ТОП-10 пошукових систем Google.",
+      "image": "../assets/img/seo-service.jpg",
+      "price": 12000,
+      "rating": 4.5,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Мобільний додаток (iOS/Android)",
+      "category": "development",
+      "description": "Розробка кросплатформених мобільних рішень на Flutter.",
+      "image": "../assets/img/app-dev.jpg",
+      "price": 60000,
+      "rating": 5.0,
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Налаштування Google Ads",
+      "category": "marketing",
+      "description": "Професійне налаштування контекстної реклами для швидких продажів.",
+      "image": "../assets/img/google-ads.jpg",
+      "price": 7000,
+      "rating": 4.8,
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Аудит безпеки сайту",
+      "category": "development",
+      "description": "Пошук вразливостей та захист від хакерських атак.",
+      "image": "../assets/img/security.jpg",
+      "price": 15000,
+      "rating": 4.6,
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "SMM Ведення соцмереж",
+      "category": "marketing",
+      "description": "Створення контент-плану та просування в Instagram/Facebook.",
+      "image": "../assets/img/smm.jpg",
+      "price": 9000,
+      "rating": 4.4,
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Проєктування інтерфейсів (UI/UX)",
+      "category": "design",
+      "description": "Створення зручних прототипів для складних веб-сервісів.",
+      "image": "../assets/img/ui-ux.jpg",
+      "price": 18000,
+      "rating": 4.9,
+      "featured": true
+    },
+    {
+      "id": 9,
+      "title": "Копірайтинг (тексти для сайту)",
+      "category": "marketing",
+      "description": "Написання текстів, що продають, з урахуванням SEO-вимог.",
+      "image": "../assets/img/copywrite.jpg",
+      "price": 3000,
+      "rating": 4.3,
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Ребрендинг компанії",
+      "category": "design",
+      "description": "Повне оновлення візуального стилю та стратегії бренду.",
+      "image": "../assets/img/rebrand.jpg",
+      "price": 35000,
+      "rating": 4.8,
+      "featured": true
+    }
+  ]

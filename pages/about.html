@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про мене | МійПроєкт</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="../js/main.js" type="module" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-flex">
+    <div class="logo">MyProject</div>
+    <div class="header-controls">
+      <button id="theme-toggle" class="btn-ui">Змінити тему 🌙</button>
+      <button id="menu-btn" class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="about.html">Про мене</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="card">
+      <h2>Про автора</h2>
+      <p>Привіт! Мене звати Кирило Мазепа. Цей проєкт демонструє мої навички роботи з семантичним HTML, адаптивним CSS та клієнтським JavaScript.</p>
+      <p>Я вірю, що веб-технології мають бути доступними та зручними для кожного, тому приділяю увагу деталям у верстці та логіці взаємодії.</p>
+    </div>
+  </section>
+
+  <section class="section media-grid">
+    <div class="card">
+      <h3>Відео-матеріал</h3>
+      <div class="media-container">
+        <video controls width="100%">
+          <source src="../assets/media/video.mp4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </div>
+      <p class="caption">Приклад інтеграції відео-контенту.</p>
+    </div>
+
+    <div class="card">
+      <h3>Аудіо-запис</h3>
+      <div class="media-container">
+        <audio controls>
+          <source src="../assets/media/audio.mp3" type="audio/mpeg">
+          Ваш браузер не підтримує аудіо.
+        </audio>
+      </div>
+      <p class="caption">Слухайте детальніше в нашому аудіо-блоці.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Всі права захищені</p>
+  </div>
+</footer>
+
+<button id="back-to-top" title="Нагору" hidden>↑</button>
+
+</body>
+</html>
